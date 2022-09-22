@@ -1,4 +1,5 @@
 document.querySelector("button").onclick = function(){
+    document.querySelector("button").style.transform = "scale(1)";
     var imageAray = ["images\\dice1.png", "images\\dice2.png", "images\\dice3.png", "images\\dice4.png", "images\\dice5.png", "images\\dice6.png"];
     var player1Score = Math.floor(Math.random() * 6);
     var player2Score = Math.floor(Math.random() * 6);
@@ -13,4 +14,5 @@ document.querySelector("button").onclick = function(){
     else{
         document.querySelector("h1").innerHTML = "Draw!";
     }
+    setTimeout(function(){document.querySelector("button").style.transform = "scale(1.1)"; }, 250);
 }
