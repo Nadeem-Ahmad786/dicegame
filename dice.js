@@ -16,3 +16,9 @@ document.querySelector("button").onclick = function(){
     }
     setTimeout(function(){document.querySelector("button").style.transform = "scale(1.1)"; }, 250);
 }
+document.querySelector("button").onmouseleave = function(){
+    document.querySelector("button").style.transform = "scale(1)";
+}
+document.querySelector("button").onmouseenter = function(){
+    document.querySelector("button").style.transform = "scale(1.1)";
+}
